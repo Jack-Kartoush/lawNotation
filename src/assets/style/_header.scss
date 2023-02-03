@@ -34,3 +34,13 @@ header li a {
     width: 300px;
 
 }
+@media only screen and (max-width: 750px) {
+    header{
+
+        justify-content: center;
+    }
+    header li a {
+    
+        display: none;
+    }
+}

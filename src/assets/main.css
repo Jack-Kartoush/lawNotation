@@ -35,6 +35,14 @@ header li a {
   width: 300px;
 }
 
+@media only screen and (max-width: 750px) {
+  header {
+    justify-content: center;
+  }
+  header li a {
+    display: none;
+  }
+}
 .Data_container {
   background-color: #a0793d;
   height: 100%;
@@ -323,6 +331,10 @@ a {
 
 .intro-text {
   width: 100%;
+}
+
+.intro-text:nth-child(2) {
+  margin: 10% 0;
 }
 
 .intro-text p {

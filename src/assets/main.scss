@@ -34,6 +34,9 @@ a {
 .intro-text {
     width: 100%;
 }
+.intro-text:nth-child(2) {
+    margin: 10% 0;
+}
 .intro-text p {
     margin-top: 10px;
 }
@@ -90,9 +93,6 @@ main {
         // background-color: #e7e7e7;
         display: flex;
         justify-content: center;
-
-        margin: 5% 0;
-
-        // margin-right: 100px;
+       margin: 5% 0;
     }
 }

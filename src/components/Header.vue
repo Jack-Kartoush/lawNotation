@@ -1,7 +1,7 @@
 <template>
 
     <header>
-        <img src="./icon/lawnotation logo.svg" alt="" class="logo">
+      <a href="#home"> <img src="./icon/lawnotation logo.svg" alt="" class="logo"></a> 
         <nav>
             <ul class="navItems"> 
             <div class="mainNav">
