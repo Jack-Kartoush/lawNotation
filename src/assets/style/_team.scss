@@ -1,31 +1,30 @@
-.team_title{
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.team_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     color: #835825;
+    margin-bottom: 20px;
 }
-.team_title h1{
+.team_title h1 {
     width: 100px;
     padding: 10px;
-  
-    // margin-top: 4%;
     border-bottom: 1px solid #835825;
     margin-bottom: 10px;
     text-align: center;
 }
-.develpoer_team{
+.develpoer_team {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 4%;
+    // padding-top: 4%;
 }
-.card{
-     width: 350px;
-     height: 100%;
-     margin:10px ;
+.card {
+    width: 350px;
+    height: 100%;
+    margin: 20px;
 }
-.profile-photo{
+.profile-photo {
     width: 70px;
     height: 70px;
     border-radius: 100%;
@@ -34,54 +33,51 @@
     right: 38%;
     box-shadow: 0px 0px 5px 5px rgba(38, 32, 32, 0.6);
 }
-.member-container{
+.member-container {
     max-width: 350px;
     max-height: 100%;
     height: 10em;
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #A0793D;
+    background-color: #a0793d;
     color: #fff;
     border-radius: 10px;
-   
 }
-.member-info p{
+.member-info p {
     margin-top: 10px;
     font-size: 16px;
 }
-.member-info p::first-letter{
+.member-info p::first-letter {
     text-transform: uppercase;
 }
-.member-info p a{
+.member-info p a {
     color: #fff;
     text-decoration: underline;
 }
-.member-info h4 a{
+.member-info h4 a {
     color: #fff;
     font-size: 18px;
     text-decoration: underline;
 }
-.member-info h4{
+.member-info h4 {
     text-align: start;
-    margin-left: 10px;
-
 }
 
 @media only screen and (min-width: 750px) {
-    .card:nth-child(2){
+    .card:nth-child(1) {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin: 10px;
+        // margin: 10px;
         margin-bottom: 2%;
     }
-    .card:nth-child(2) .member-container{
+    .card:nth-child(1) .member-container {
         height: 100%;
-        min-width: 450px;
+        // min-width: 450px;
         justify-content: flex-start;
     }
-    // .develpoer_team{
-    //     margin-top: 4%;
-    // }
+    .develpoer_team{
+        margin-top: 1%;
+    }
 }

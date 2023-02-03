@@ -1,6 +1,7 @@
 <template>
 
     <header>
+        <img src="./icon/lawnotation logo.svg" alt="" class="logo">
         <nav>
             <ul class="navItems"> 
             <div class="mainNav">

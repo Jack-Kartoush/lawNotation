@@ -1,9 +1,8 @@
 header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
-  background: rgb(122, 95, 61);
-  background: linear-gradient(204deg, rgb(122, 95, 61) 0%, rgb(131, 92, 53) 15%, rgb(140, 99, 51) 31%, rgb(131, 88, 37) 70%, rgb(131, 92, 53) 86%, rgb(122, 95, 61) 100%);
+  background-color: #fff;
   height: 70px;
   position: -webkit-sticky;
   position: sticky;
@@ -28,8 +27,12 @@ header nav .navItems {
 
 header li a {
   padding: 10px;
-  color: white;
+  color: #a0793d;
   font-size: 15px;
+}
+
+.logo {
+  width: 300px;
 }
 
 .Data_container {
@@ -51,11 +54,14 @@ header li a {
 }
 
 .data-title {
-  position: absolute;
-  margin-top: 10px;
-  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50px;
   color: #fff;
-  text-align: center;
+  z-index: 1;
+  width: auto;
 }
 
 .Datasets_contaier h3,
@@ -82,7 +88,7 @@ header li a {
 }
 
 .Description {
-  color: #c3c3c3;
+  color: #e7e7e7;
   font-size: 16px;
   font-weight: 500;
   margin-left: 10px;
@@ -102,18 +108,22 @@ header li a {
   padding-bottom: 10px;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 850px) {
   .Data_container {
     display: flex;
     justify-content: space-between;
-    -webkit-clip-path: polygon(100% 100%, 50% 88%, 0 100%, 0 19%, 49% 0, 100% 17%);
-            clip-path: polygon(100% 100%, 50% 88%, 0 100%, 0 19%, 49% 0, 100% 17%);
+    -webkit-clip-path: polygon(100% 100%, 50% 88%, 0 100%, 0 19%, 50% 0, 100% 17%);
+            clip-path: polygon(100% 100%, 50% 88%, 0 100%, 0 19%, 50% 0, 100% 17%);
   }
   .data-title {
-    position: absolute;
-    bottom: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    top: 100px;
     z-index: 1;
-    left: 40%;
   }
   .Description {
     width: 100%;
@@ -125,12 +135,11 @@ header li a {
     padding: 5%;
   }
   .datasets_annotation {
-    width: 51%;
+    width: 50%;
     border-right: 1px solid #c3c3c3;
   }
   .processing_storage {
     width: 50%;
-    margin-left: 20px;
   }
   .Datasets_contaier li a,
 .processing-container li a {
@@ -143,6 +152,7 @@ header li a {
   align-items: center;
   width: 100%;
   color: #835825;
+  margin-bottom: 20px;
 }
 
 .team_title h1 {
@@ -157,13 +167,12 @@ header li a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 4%;
 }
 
 .card {
   width: 350px;
   height: 100%;
-  margin: 10px;
+  margin: 20px;
 }
 
 .profile-photo {
@@ -183,7 +192,7 @@ header li a {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: #A0793D;
+  background-color: #a0793d;
   color: #fff;
   border-radius: 10px;
 }
@@ -210,25 +219,25 @@ header li a {
 
 .member-info h4 {
   text-align: start;
-  margin-left: 10px;
 }
 
 @media only screen and (min-width: 750px) {
-  .card:nth-child(2) {
+  .card:nth-child(1) {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 10px;
     margin-bottom: 2%;
   }
-  .card:nth-child(2) .member-container {
+  .card:nth-child(1) .member-container {
     height: 100%;
-    min-width: 450px;
     justify-content: flex-start;
+  }
+  .develpoer_team {
+    margin-top: 1%;
   }
 }
 .contibutors_container {
-  margin-top: 4%;
+  margin-top: 5%;
   background-color: #A0793D;
   height: 100%;
 }
@@ -298,16 +307,18 @@ a {
   display: block;
   color: #fff;
   height: 100%;
-  padding: 10px;
+  padding: 15px;
 }
 
 .intro-img {
   position: absolute;
+  background-image: url("./img/bg-lawNotationHome.jpg");
   max-width: 100%;
   width: 100%;
   min-height: 85vh;
   filter: brightness(40%);
   z-index: -1;
+  background-position: center;
 }
 
 .intro-text {
@@ -315,14 +326,14 @@ a {
 }
 
 .intro-text p {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 footer {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  background-color: #A0793D;
+  background-color: #a0793d;
   padding-left: 4%;
   color: white;
 }
@@ -338,14 +349,25 @@ footer p {
   font-size: 17px;
 }
 
+footer p a {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (min-width: 750px) {
   .Introduction-container {
-    width: 80%;
+    padding: 0;
   }
   .intro-text {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+    align-self: center;
+    width: 85%;
     height: 100%;
   }
   .intro-img {
@@ -354,14 +376,15 @@ footer p {
   .intro-text p {
     width: 40%;
     font-size: 18px;
+    margin: 0;
+    padding-bottom: 10px;
   }
   .intro-text .text_bottom {
-    margin-top: 8%;
+    margin-top: 3%;
   }
   .intro-text:nth-child(2) {
     display: flex;
     justify-content: center;
-    width: 80%;
-    margin-top: 10%;
+    margin: 5% 0;
   }
 }/*# sourceMappingURL=main.css.map */

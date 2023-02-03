@@ -1,10 +1,11 @@
 header{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
-    background: rgb(122,95,61);
-    background: linear-gradient(204deg, rgba(122,95,61,1) 0%, rgba(131,92,53,1) 15%, rgba(140,99,51,1) 31%, rgba(131,88,37,1) 70%, rgba(131,92,53,1) 86%, rgba(122,95,61,1) 100%);
-    // background-color: #835825;
+    // background: rgb(122,95,61);
+    // background: linear-gradient(204deg, rgba(122,95,61,1) 0%, rgba(131,92,53,1) 15%, rgba(140,99,51,1) 31%, rgba(131,88,37,1) 70%, rgba(131,92,53,1) 86%, rgba(122,95,61,1) 100%);
+    // background-color: #a0793d;
+    background-color: #fff;
     height: 70px;
     position: sticky;
     top: 0;
@@ -26,6 +27,10 @@ header nav .navItems{
 }   
 header li a {
     padding: 10px;
-    color: #ffff;
+    color: #a0793d;
     font-size: 15px;
+}
+.logo{
+    width: 300px;
+
 }

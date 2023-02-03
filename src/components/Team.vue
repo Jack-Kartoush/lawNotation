@@ -1,9 +1,9 @@
 <template>
-  <a name="team"></a>
-  <section class="develpoer_team">
-    <div class="team_title">
+
+    <span class="team_title">
       <h1>Team</h1>
-    </div>
+    </span>
+  <section class="develpoer_team">
     <div class="card">
       <div class="member-container">
         <div class="member-img">

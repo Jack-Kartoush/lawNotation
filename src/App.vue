@@ -3,7 +3,8 @@
     <Header />
   <main>
 
-      <img src="./assets/img/bg-lawNotationHome.jpg" alt="" class="intro-img" />
+      <!-- <img src="./assets/img/bg-lawNotationHome.jpg" alt="" class="intro-img" /> -->
+      <div class="intro-img"></div>
     <section class="Introduction-container">
       <div class="intro-text">
         <p class="text_bottom">

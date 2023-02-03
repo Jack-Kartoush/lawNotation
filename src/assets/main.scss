@@ -19,50 +19,59 @@ a {
     display: block;
     color: #fff;
     height: 100%;
-    padding: 10px;
+    padding: 15px;
 }
 .intro-img {
     position: absolute;
+    background-image: url("./img/bg-lawNotationHome.jpg");
     max-width: 100%;
     width: 100%;
     min-height: 85vh;
     filter: brightness(40%);
     z-index: -1;
+    background-position: center;
 }
 .intro-text {
     width: 100%;
-    // background-color: aqua;
 }
 .intro-text p {
-    margin-top: 20px;
+    margin-top: 10px;
 }
-footer{
+footer {
     display: flex;
     justify-content: flex-start;
-   flex-direction: column;
-    background-color: #A0793D;
+    flex-direction: column;
+    background-color: #a0793d;
     padding-left: 4%;
     color: #ffff;
 }
-footer h2{
+footer h2 {
     font-size: 20px;
-    margin:10px;
+    margin: 10px;
 }
-footer p{
-    padding:10px;
-    margin-left:20px;
+footer p {
+    padding: 10px;
+    margin-left: 20px;
     font-size: 17px;
 }
-
+footer p a {
+    text-decoration: underline;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
 @media only screen and (min-width: 750px) {
     .Introduction-container {
-        // margin: 0 10rem;
-        width: 80%;
+        padding: 0;
+        // width: 85%;
     }
-    .intro-text{
+    .intro-text {
         display: flex;
         justify-content: flex-end;
         align-items: flex-start;
+        align-self: center;
+        width: 85%;
         height: 100%;
     }
     .intro-img {
@@ -71,18 +80,19 @@ footer p{
     .intro-text p {
         width: 40%;
         font-size: 18px;
+        margin: 0;
+        padding-bottom: 10px;
     }
-    .intro-text .text_bottom{
-        margin-top: 8%;
+    .intro-text .text_bottom {
+        margin-top: 3%;
     }
-    .intro-text:nth-child(2){
+    .intro-text:nth-child(2) {
         // background-color: #e7e7e7;
         display: flex;
         justify-content: center;
-        width: 80%;
-        margin-top: 10%;
-        
+
+        margin: 5% 0;
+
         // margin-right: 100px;
     }
 }
-

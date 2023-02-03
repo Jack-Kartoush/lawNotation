@@ -1,12 +1,9 @@
 .Data_container {
     background-color: #a0793d;
-    // display: flex;
-    // justify-content: center;
-    // flex-direction: column;
     height: 100%;
     color: #fff;
     padding: 20px;
-    // clip-path: polygon(100% 100%, 51% 88%, 0 100%, 0 19%, 49% 0, 100% 17%);
+   
 }
 .processing_storage {
     display: block;
@@ -18,11 +15,14 @@
     display: block;
 }
 .data-title {
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
     color: #fff;
-    text-align: center;
+    z-index: 1;
+  width: auto;
 }
 .Datasets_contaier h3,
 .processing-container h3 {
@@ -45,7 +45,7 @@
     margin-top: 10px;
 }
 .Description {
-    color: #c3c3c3;
+    color: #e7e7e7;
     font-size: 16px;
     font-weight: 500;
     margin-left: 10px;
@@ -61,17 +61,23 @@
 .Storage_container h3 {
     padding-bottom: 10px;
 }
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 850px) {
     .Data_container {
         display: flex;
         justify-content: space-between;
-        clip-path: polygon(100% 100%, 50% 88%, 0 100%, 0 19%, 49% 0, 100% 17%);
+        clip-path: polygon(100% 100%, 50% 88%, 0 100%, 0 19%, 50% 0, 100% 17%);
     }
     .data-title {
-        position: absolute;
-        bottom: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        position: relative;
+        top: 100px;
         z-index: 1;
-        left: 40%;
+
+        
     }
     .Description {
         width: 100%;
@@ -82,14 +88,15 @@
     .processing_storage {
         margin-top: 10%;
         padding: 5%;
+        
     }
     .datasets_annotation {
-        width: 51%;
+        width: 50%;
         border-right: 1px solid #c3c3c3;
     }
     .processing_storage {
         width: 50%;
-        margin-left: 20px;
+        // margin-left: 20px;
     }
     .Datasets_contaier li a,
     .processing-container li a {
