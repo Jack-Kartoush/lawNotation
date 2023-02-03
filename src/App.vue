@@ -1,6 +1,8 @@
 <template>
-  <Header />
+  <a name="home"></a>
+    <Header />
   <main>
+
       <img src="./assets/img/bg-lawNotationHome.jpg" alt="" class="intro-img" />
     <section class="Introduction-container">
       <div class="intro-text">
@@ -38,11 +40,13 @@
       <footer>
        <h2>Interested in joining the development or in using the platform?</h2>
        <p>Send an email to: <span><a href = "mailto: law-techlab@maastrichtuniversity.nl">law-techlab@maastrichtuniversity.nl</a></span></p>
+       <a name="contactus"></a>
+
       </footer>
 </template>
 <script setup>
 import Contributors from "./components/Contributors.vue";
-import Team from "./components/team.vue";
+import Team from "./components/Team.vue";
 import DataSoftware from "./components/DataSoftware.vue";
 import Header from "./components/Header.vue";
 </script>

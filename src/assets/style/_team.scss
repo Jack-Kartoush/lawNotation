@@ -4,18 +4,21 @@
    align-items: center;
     width: 100%;
     color: #835825;
-    
 }
 .team_title h1{
     width: 100px;
     padding: 10px;
+  
+    // margin-top: 4%;
     border-bottom: 1px solid #835825;
     margin-bottom: 10px;
+    text-align: center;
 }
 .develpoer_team{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-top: 4%;
 }
 .card{
      width: 350px;
@@ -66,14 +69,19 @@
 }
 
 @media only screen and (min-width: 750px) {
-    .card:nth-child(1){
+    .card:nth-child(2){
         width: 100%;
         display: flex;
         justify-content: center;
         margin: 10px;
         margin-bottom: 2%;
     }
-    .member-container:nth-child(1){
+    .card:nth-child(2) .member-container{
         height: 100%;
+        min-width: 450px;
+        justify-content: flex-start;
     }
+    // .develpoer_team{
+    //     margin-top: 4%;
+    // }
 }

@@ -111,7 +111,7 @@ header li a {
   }
   .data-title {
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     z-index: 1;
     left: 40%;
   }
@@ -150,12 +150,14 @@ header li a {
   padding: 10px;
   border-bottom: 1px solid #835825;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .develpoer_team {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-top: 4%;
 }
 
 .card {
@@ -212,18 +214,21 @@ header li a {
 }
 
 @media only screen and (min-width: 750px) {
-  .card:nth-child(1) {
+  .card:nth-child(2) {
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 10px;
     margin-bottom: 2%;
   }
-  .member-container:nth-child(1) {
+  .card:nth-child(2) .member-container {
     height: 100%;
+    min-width: 450px;
+    justify-content: flex-start;
   }
 }
 .contibutors_container {
+  margin-top: 4%;
   background-color: #A0793D;
   height: 100%;
 }
@@ -237,8 +242,8 @@ header li a {
 
 .Contributors_title h1 {
   color: white;
-  width: 140px;
   padding: 10px;
+  margin-top: 10px;
   border-bottom: 1px solid #c3c3c3;
   margin-bottom: 10px;
 }
@@ -278,6 +283,7 @@ header li a {
   padding: 0;
   box-sizing: 0;
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -333,6 +339,9 @@ footer p {
 }
 
 @media only screen and (min-width: 750px) {
+  .Introduction-container {
+    width: 80%;
+  }
   .intro-text {
     display: flex;
     justify-content: flex-end;
@@ -347,11 +356,12 @@ footer p {
     font-size: 18px;
   }
   .intro-text .text_bottom {
-    margin-top: 5%;
+    margin-top: 8%;
   }
-  .intro-text .text_right {
+  .intro-text:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    width: 80%;
     margin-top: 10%;
-    width: 30%;
-    margin-right: 45%;
   }
 }/*# sourceMappingURL=main.css.map */

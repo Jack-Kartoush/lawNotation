@@ -4,11 +4,11 @@
         <nav>
             <ul class="navItems"> 
             <div class="mainNav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Data & software</a></li>
-                <li><a href="">Team</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#data&software">Data & software</a></li>
+                <li><a href="#team">Team</a></li>
             </div>
-                <li><a href="">Contact us</a></li>
+                <li><a href="#contactus">Contact us</a></li>
 
             </ul>
         </nav>

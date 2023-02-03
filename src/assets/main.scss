@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: 0;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 body {
     background-color: #e7e7e7;
@@ -54,6 +55,10 @@ footer p{
 }
 
 @media only screen and (min-width: 750px) {
+    .Introduction-container {
+        // margin: 0 10rem;
+        width: 80%;
+    }
     .intro-text{
         display: flex;
         justify-content: flex-end;
@@ -68,12 +73,16 @@ footer p{
         font-size: 18px;
     }
     .intro-text .text_bottom{
-        margin-top: 5%;
+        margin-top: 8%;
     }
-    .intro-text .text_right{
+    .intro-text:nth-child(2){
+        // background-color: #e7e7e7;
+        display: flex;
+        justify-content: center;
+        width: 80%;
         margin-top: 10%;
-        width: 30%;
-        margin-right: 45%;
+        
+        // margin-right: 100px;
     }
 }
 
