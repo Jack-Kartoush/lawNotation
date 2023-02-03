@@ -1,0 +1,31 @@
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: rgb(122,95,61);
+    background: linear-gradient(204deg, rgba(122,95,61,1) 0%, rgba(131,92,53,1) 15%, rgba(140,99,51,1) 31%, rgba(131,88,37,1) 70%, rgba(131,92,53,1) 86%, rgba(122,95,61,1) 100%);
+    // background-color: #835825;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    box-shadow: 1px 3px 6px rgba(0,0,0,0.6);
+    z-index: 999;
+}
+ .mainNav{
+
+    display: flex;
+    align-items: center;
+}
+header nav .navItems{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    margin-right: 10px;
+    padding: 10px 12px;
+}   
+header li a {
+    padding: 10px;
+    color: #ffff;
+    font-size: 15px;
+}

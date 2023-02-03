@@ -1,0 +1,79 @@
+@import "./style/header";
+@import "./style/Data_software";
+@import "./style//team";
+@import "./style/contibutors";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #e7e7e7;
+}
+a {
+    text-decoration: none;
+}
+.Introduction-container {
+    display: block;
+    color: #fff;
+    height: 100%;
+    padding: 10px;
+}
+.intro-img {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    min-height: 85vh;
+    filter: brightness(40%);
+    z-index: -1;
+}
+.intro-text {
+    width: 100%;
+    // background-color: aqua;
+}
+.intro-text p {
+    margin-top: 20px;
+}
+footer{
+    display: flex;
+    justify-content: flex-start;
+   flex-direction: column;
+    background-color: #A0793D;
+    padding-left: 4%;
+    color: #ffff;
+}
+footer h2{
+    font-size: 20px;
+    margin:10px;
+}
+footer p{
+    padding:10px;
+    margin-left:20px;
+    font-size: 17px;
+}
+
+@media only screen and (min-width: 750px) {
+    .intro-text{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        height: 100%;
+    }
+    .intro-img {
+        min-height: 100vh;
+    }
+    .intro-text p {
+        width: 40%;
+        font-size: 18px;
+    }
+    .intro-text .text_bottom{
+        margin-top: 5%;
+    }
+    .intro-text .text_right{
+        margin-top: 10%;
+        width: 30%;
+        margin-right: 45%;
+    }
+}
+

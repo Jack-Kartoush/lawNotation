@@ -1,0 +1,98 @@
+.Data_container {
+    background-color: #a0793d;
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: column;
+    height: 100%;
+    color: #fff;
+    padding: 20px;
+    // clip-path: polygon(100% 100%, 51% 88%, 0 100%, 0 19%, 49% 0, 100% 17%);
+}
+.processing_storage {
+    display: block;
+    padding: 10px;
+}
+.datasets_annotation {
+    margin-top: 10%;
+    padding: 10px;
+    display: block;
+}
+.data-title {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 15px;
+    color: #fff;
+    text-align: center;
+}
+.Datasets_contaier h3,
+.processing-container h3 {
+    margin-bottom: 10px;
+}
+
+.Datasets_contaier li a,
+.processing-container li a {
+    font-weight: 500;
+    font-size: 18px;
+    color: #e7e7e7;
+    text-decoration: underline;
+}
+.Datasets_contaier li,
+.processing-container li {
+    padding-bottom: 10px;
+}
+.Datasets_contaier ul,
+.processing-container ul {
+    margin-top: 10px;
+}
+.Description {
+    color: #c3c3c3;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+.Storage_container,
+.Anotation_container{
+    cursor: progress;
+}
+.Anotation_container h3 {
+    padding-bottom: 10px;
+}
+.Storage_container h3 {
+    padding-bottom: 10px;
+}
+@media only screen and (min-width: 750px) {
+    .Data_container {
+        display: flex;
+        justify-content: space-between;
+        clip-path: polygon(100% 100%, 50% 88%, 0 100%, 0 19%, 49% 0, 100% 17%);
+    }
+    .data-title {
+        position: absolute;
+        bottom: 5%;
+        z-index: 1;
+        left: 40%;
+    }
+    .Description {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .datasets_annotation,
+    .processing_storage {
+        margin-top: 10%;
+        padding: 5%;
+    }
+    .datasets_annotation {
+        width: 51%;
+        border-right: 1px solid #c3c3c3;
+    }
+    .processing_storage {
+        width: 50%;
+        margin-left: 20px;
+    }
+    .Datasets_contaier li a,
+    .processing-container li a {
+        font-size: 20px;
+    }
+}

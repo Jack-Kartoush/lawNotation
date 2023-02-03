@@ -1,0 +1,357 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: rgb(122, 95, 61);
+  background: linear-gradient(204deg, rgb(122, 95, 61) 0%, rgb(131, 92, 53) 15%, rgb(140, 99, 51) 31%, rgb(131, 88, 37) 70%, rgb(131, 92, 53) 86%, rgb(122, 95, 61) 100%);
+  height: 70px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+.mainNav {
+  display: flex;
+  align-items: center;
+}
+
+header nav .navItems {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  margin-right: 10px;
+  padding: 10px 12px;
+}
+
+header li a {
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+}
+
+.Data_container {
+  background-color: #a0793d;
+  height: 100%;
+  color: #fff;
+  padding: 20px;
+}
+
+.processing_storage {
+  display: block;
+  padding: 10px;
+}
+
+.datasets_annotation {
+  margin-top: 10%;
+  padding: 10px;
+  display: block;
+}
+
+.data-title {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.Datasets_contaier h3,
+.processing-container h3 {
+  margin-bottom: 10px;
+}
+
+.Datasets_contaier li a,
+.processing-container li a {
+  font-weight: 500;
+  font-size: 18px;
+  color: #e7e7e7;
+  text-decoration: underline;
+}
+
+.Datasets_contaier li,
+.processing-container li {
+  padding-bottom: 10px;
+}
+
+.Datasets_contaier ul,
+.processing-container ul {
+  margin-top: 10px;
+}
+
+.Description {
+  color: #c3c3c3;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+
+.Storage_container,
+.Anotation_container {
+  cursor: progress;
+}
+
+.Anotation_container h3 {
+  padding-bottom: 10px;
+}
+
+.Storage_container h3 {
+  padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 750px) {
+  .Data_container {
+    display: flex;
+    justify-content: space-between;
+    -webkit-clip-path: polygon(100% 100%, 50% 88%, 0 100%, 0 19%, 49% 0, 100% 17%);
+            clip-path: polygon(100% 100%, 50% 88%, 0 100%, 0 19%, 49% 0, 100% 17%);
+  }
+  .data-title {
+    position: absolute;
+    bottom: 5%;
+    z-index: 1;
+    left: 40%;
+  }
+  .Description {
+    width: 100%;
+    font-size: 17px;
+  }
+  .datasets_annotation,
+.processing_storage {
+    margin-top: 10%;
+    padding: 5%;
+  }
+  .datasets_annotation {
+    width: 51%;
+    border-right: 1px solid #c3c3c3;
+  }
+  .processing_storage {
+    width: 50%;
+    margin-left: 20px;
+  }
+  .Datasets_contaier li a,
+.processing-container li a {
+    font-size: 20px;
+  }
+}
+.team_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #835825;
+}
+
+.team_title h1 {
+  width: 100px;
+  padding: 10px;
+  border-bottom: 1px solid #835825;
+  margin-bottom: 10px;
+}
+
+.develpoer_team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 350px;
+  height: 100%;
+  margin: 10px;
+}
+
+.profile-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  position: relative;
+  bottom: 25%;
+  right: 38%;
+  box-shadow: 0px 0px 5px 5px rgba(38, 32, 32, 0.6);
+}
+
+.member-container {
+  max-width: 350px;
+  max-height: 100%;
+  height: 10em;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #A0793D;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.member-info p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.member-info p::first-letter {
+  text-transform: uppercase;
+}
+
+.member-info p a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.member-info h4 a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.member-info h4 {
+  text-align: start;
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 750px) {
+  .card:nth-child(1) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-bottom: 2%;
+  }
+  .member-container:nth-child(1) {
+    height: 100%;
+  }
+}
+.contibutors_container {
+  background-color: #A0793D;
+  height: 100%;
+}
+
+.Contributors_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.Contributors_title h1 {
+  color: white;
+  width: 140px;
+  padding: 10px;
+  border-bottom: 1px solid #c3c3c3;
+  margin-bottom: 10px;
+}
+
+.Contributors_list {
+  padding: 20px;
+}
+
+.Contributors_list nav {
+  display: block;
+}
+
+.Contributors_list nav ul li {
+  list-style: circle;
+  margin-bottom: 20px;
+}
+
+.Contributors_list li a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.Contributors_list span {
+  color: white;
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 750px) {
+  .Contributors_list nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #e7e7e7;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Introduction-container {
+  display: block;
+  color: #fff;
+  height: 100%;
+  padding: 10px;
+}
+
+.intro-img {
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  min-height: 85vh;
+  filter: brightness(40%);
+  z-index: -1;
+}
+
+.intro-text {
+  width: 100%;
+}
+
+.intro-text p {
+  margin-top: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: #A0793D;
+  padding-left: 4%;
+  color: white;
+}
+
+footer h2 {
+  font-size: 20px;
+  margin: 10px;
+}
+
+footer p {
+  padding: 10px;
+  margin-left: 20px;
+  font-size: 17px;
+}
+
+@media only screen and (min-width: 750px) {
+  .intro-text {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100%;
+  }
+  .intro-img {
+    min-height: 100vh;
+  }
+  .intro-text p {
+    width: 40%;
+    font-size: 18px;
+  }
+  .intro-text .text_bottom {
+    margin-top: 5%;
+  }
+  .intro-text .text_right {
+    margin-top: 10%;
+    width: 30%;
+    margin-right: 45%;
+  }
+}/*# sourceMappingURL=main.css.map */
