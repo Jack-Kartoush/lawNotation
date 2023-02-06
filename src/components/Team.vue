@@ -1,9 +1,9 @@
 <template>
 
+  <section class="develpoer_team">
     <span class="team_title">
       <h1>Team</h1>
     </span>
-  <section class="develpoer_team">
     <div class="card">
       <div class="member-container">
         <div class="member-img">

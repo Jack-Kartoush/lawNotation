@@ -5,7 +5,7 @@ header{
     // background: rgb(122,95,61);
     // background: linear-gradient(204deg, rgba(122,95,61,1) 0%, rgba(131,92,53,1) 15%, rgba(140,99,51,1) 31%, rgba(131,88,37,1) 70%, rgba(131,92,53,1) 86%, rgba(122,95,61,1) 100%);
     // background-color: #a0793d;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     height: 70px;
     position: sticky;
     top: 0;
@@ -34,9 +34,9 @@ header li a {
     width: 300px;
 
 }
+//for the small devices
 @media only screen and (max-width: 750px) {
     header{
-
         justify-content: center;
     }
     header li a {

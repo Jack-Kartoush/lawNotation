@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   height: 70px;
   position: -webkit-sticky;
   position: sticky;
@@ -43,8 +43,11 @@ header li a {
     display: none;
   }
 }
-.Data_container {
+.Data_section {
   background-color: #a0793d;
+}
+
+.Data_container {
   height: 100%;
   color: #fff;
   padding: 20px;
@@ -56,7 +59,6 @@ header li a {
 }
 
 .datasets_annotation {
-  margin-top: 10%;
   padding: 10px;
   display: block;
 }
@@ -65,11 +67,14 @@ header li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: 50px;
+  margin-top: 3%;
   color: #fff;
   z-index: 1;
-  width: auto;
+}
+
+.data-title h1 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #c3c3c3;
 }
 
 .Datasets_contaier h3,
@@ -81,7 +86,7 @@ header li a {
 .processing-container li a {
   font-weight: 500;
   font-size: 18px;
-  color: #e7e7e7;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -100,7 +105,7 @@ header li a {
   font-size: 16px;
   font-weight: 500;
   margin-left: 10px;
-  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .Storage_container,
@@ -117,29 +122,24 @@ header li a {
 }
 
 @media only screen and (min-width: 850px) {
-  .Data_container {
-    display: flex;
-    justify-content: space-between;
+  .Data_section {
+    background-color: #a0793d;
     -webkit-clip-path: polygon(100% 100%, 50% 88%, 0 100%, 0 19%, 50% 0, 100% 17%);
             clip-path: polygon(100% 100%, 50% 88%, 0 100%, 0 19%, 50% 0, 100% 17%);
   }
-  .data-title {
-    width: 100%;
+  .Data_container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    position: relative;
-    top: 100px;
-    z-index: 1;
+    justify-content: space-between;
+  }
+  .data-title {
+    margin-top: 3%;
   }
   .Description {
     width: 100%;
-    font-size: 17px;
+    font-size: 16px;
   }
   .datasets_annotation,
 .processing_storage {
-    margin-top: 10%;
     padding: 5%;
   }
   .datasets_annotation {
@@ -230,18 +230,15 @@ header li a {
 }
 
 @media only screen and (min-width: 750px) {
-  .card:nth-child(1) {
+  .card:nth-child(2) {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 2%;
   }
-  .card:nth-child(1) .member-container {
+  .card:nth-child(2) .member-container {
     height: 100%;
     justify-content: flex-start;
-  }
-  .develpoer_team {
-    margin-top: 1%;
   }
 }
 .contibutors_container {
@@ -386,7 +383,7 @@ main {
     min-height: 100vh;
   }
   .intro-text p {
-    width: 40%;
+    max-width: 40%;
     font-size: 18px;
     margin: 0;
     padding-bottom: 10px;

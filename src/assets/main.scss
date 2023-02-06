@@ -67,7 +67,6 @@ main {
 @media only screen and (min-width: 750px) {
     .Introduction-container {
         padding: 0;
-        // width: 85%;
     }
     .intro-text {
         display: flex;
@@ -81,7 +80,7 @@ main {
         min-height: 100vh;
     }
     .intro-text p {
-        width: 40%;
+        max-width: 40%;
         font-size: 18px;
         margin: 0;
         padding-bottom: 10px;
@@ -90,7 +89,6 @@ main {
         margin-top: 3%;
     }
     .intro-text:nth-child(2) {
-        // background-color: #e7e7e7;
         display: flex;
         justify-content: center;
        margin: 5% 0;
