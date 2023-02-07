@@ -1,6 +1,6 @@
 <template>
-
   <section class="develpoer_team">
+    <a name="team"></a>
     <span class="team_title">
       <h1>Team</h1>
     </span>

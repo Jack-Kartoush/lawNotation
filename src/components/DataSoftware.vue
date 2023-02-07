@@ -33,7 +33,7 @@
           <h3>Annotation:</h3>
           <p class="Description">Not available yet</p>
         </div>
-        <a name="team"></a>
+       
       </div>
       <div class="processing_storage">
         <div class="processing-container">
@@ -53,5 +53,6 @@
         </div>
       </div>
     </div>
+
   </section>
 </template>
