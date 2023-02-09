@@ -41,8 +41,9 @@ a {
     margin-top: 10px;
 }
 footer {
+    max-width: 100%;
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
     flex-direction: column;
     background-color: #a0793d;
     padding-left: 4%;
@@ -54,11 +55,13 @@ footer h2 {
 }
 footer p {
     padding: 10px;
-    margin-left: 20px;
     font-size: 17px;
+    margin-bottom: 3em;
 }
 footer p a {
+    color: #f5eede;
     text-decoration: underline;
+    font-size: 20px;
 }
 main {
     display: flex;

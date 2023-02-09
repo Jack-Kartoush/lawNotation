@@ -4,7 +4,6 @@ header {
   align-items: center;
   background-color: rgb(255, 255, 255);
   height: 70px;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.6);
@@ -29,10 +28,16 @@ header li a {
   padding: 10px;
   color: #a0793d;
   font-size: 15px;
+  opacity: 0.5;
 }
 
 .logo {
   width: 300px;
+}
+
+.active a {
+  opacity: 1;
+  border-bottom: 1px solid #a0793d;
 }
 
 @media only screen and (max-width: 750px) {
@@ -135,7 +140,7 @@ header li a {
     font-size: 16px;
   }
   .datasets_annotation,
-.processing_storage {
+  .processing_storage {
     padding: 5%;
   }
   .datasets_annotation {
@@ -146,7 +151,7 @@ header li a {
     width: 50%;
   }
   .Datasets_contaier li a,
-.processing-container li a {
+  .processing-container li a {
     font-size: 20px;
   }
 }
@@ -267,7 +272,7 @@ header li a {
 }
 
 .Contributors_list nav ul li {
-  list-style: circle;
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -335,8 +340,9 @@ a {
 }
 
 footer {
+  max-width: 100%;
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
   flex-direction: column;
   background-color: #a0793d;
   padding-left: 4%;
@@ -350,12 +356,14 @@ footer h2 {
 
 footer p {
   padding: 10px;
-  margin-left: 20px;
   font-size: 17px;
+  margin-bottom: 3em;
 }
 
 footer p a {
+  color: #f5eede;
   text-decoration: underline;
+  font-size: 20px;
 }
 
 main {

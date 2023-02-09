@@ -13,7 +13,6 @@ header{
     z-index: 999;
 }
  .mainNav{
-
     display: flex;
     align-items: center;
 }
@@ -29,10 +28,15 @@ header li a {
     padding: 10px;
     color: #a0793d;
     font-size: 15px;
+    opacity: 0.5;
 }
 .logo{
     width: 300px;
-
+}
+.active a{
+    opacity: 1;
+    border-bottom: 1px solid #a0793d;
+    // padding-bottom: 10px;
 }
 //for the small devices
 @media only screen and (max-width: 750px) {

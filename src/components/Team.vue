@@ -10,7 +10,7 @@
           <img src="../assets/img/gijs.png" alt="" class="profile-photo" />
         </div>
         <div class="member-info">
-          <h4><a href="">Prof. Gijs van Dijck </a></h4>
+          <h4><a href="https://www.biss-institute.com/team/Gijs-van-Dijck/">Prof. Gijs van Dijck </a></h4>
           <p>Law, AI</p>
           <p>Maastricht Law and Tech Lab</p>
           <p>
@@ -28,7 +28,7 @@
         </div>
         <div class="member-info">
           <h4>
-            <a href="https://www.maastrichtuniversity.nl/p70085471"
+            <a href="https://www.biss-institute.com/team/Carlos-Aguilera/"
               >Carlos Aguilera</a
             >
           </h4>
@@ -80,7 +80,7 @@
         </div>
         <div class="member-info">
           <h4>
-            <a href="https://www.maastrichtuniversity.nl/p70076816"
+            <a href="https://www.biss-institute.com/team/Shashank-Chakravarthy/"
               >Shashank Chakravarthy</a
             >
           </h4>
