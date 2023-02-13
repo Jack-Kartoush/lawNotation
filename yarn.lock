@@ -160,6 +160,11 @@
   "resolved" "https://registry.npmjs.org/arg/-/arg-5.0.2.tgz"
   "version" "5.0.2"
 
+"bezier-easing@^2.0.3":
+  "integrity" "sha512-gbIqZ/eslnUFC1tjEvtz0sgx+xTK20wDnYMIA27VA04R7w6xxXQPZDbibjA9DTWZRA2CXtwHykkVzlCaAJAZig=="
+  "resolved" "https://registry.npmjs.org/bezier-easing/-/bezier-easing-2.1.0.tgz"
+  "version" "2.1.0"
+
 "binary-extensions@^2.0.0":
   "integrity" "sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA=="
   "resolved" "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz"
@@ -387,6 +392,13 @@
   "integrity" "sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw=="
   "resolved" "https://registry.npmjs.org/nanoid/-/nanoid-3.3.4.tgz"
   "version" "3.3.4"
+
+"navscroll@^1.1.3":
+  "integrity" "sha512-Cc7IEgCGuxaaFLOZThRx2jXAF7dLF9tXiI2Np91M+45WiVqB/s5U2Z1KLp5HcbpokQVtbtsdjZ2jG2CuS0VrUg=="
+  "resolved" "https://registry.npmjs.org/navscroll/-/navscroll-1.1.3.tgz"
+  "version" "1.1.3"
+  dependencies:
+    "bezier-easing" "^2.0.3"
 
 "normalize-path@^3.0.0", "normalize-path@~3.0.0":
   "integrity" "sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA=="

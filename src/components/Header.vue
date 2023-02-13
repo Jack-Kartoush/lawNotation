@@ -3,31 +3,32 @@
     <a href="#home" @click="activeTab = 'home'">
       <img src="./icon/lawnotation logo.svg" alt="" class="logo"
     /></a>
-    <nav>
-      <ul class="navItems">
-        <div class="mainNav">
-          <li :class="{ active: isActive }">
-            <a href="#home" @click="activeTab = 'home'">Home</a>
-          </li>
-          <li :class="{ active: Data }">
-            <a href="#data&software" @click="activeTab = 'data'"
-              >Data & software</a
-            >
-          </li>
-          <li :class="{ active: team }">
-            <a href="#team" @click="activeTab = 'team'">Team</a>
-          </li>
-        </div>
-        <li :class="{ active: contact }"><a href="#contactus" @click="activeTab = 'contact'">Contact us</a></li>
-      </ul>
-    </nav>
+    <ul class="navItems">
+      <li :class="{ active: isActive }">
+        <a class="item" href="#home" @click="activeTab = 'home'">Home</a>
+      </li>
+      <li :class="{ active: Data }">
+        <a class="item" href="#data&software" @click="activeTab = 'data'"
+          >Data & software</a
+        >
+      </li>
+      <li :class="{ active: team }">
+        <a class="item" href="#team" @click="activeTab = 'team'">Team</a>
+      </li>
+      <li :class="{ active: contact }">
+        <a class="item" href="#contactus" @click="activeTab = 'contact'"
+          >Contact us</a
+        >
+      </li>
+    </ul>
   </header>
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
-
-const activeTab = ref("home");
+import { ref, computed, defineProps, toRefs } from "vue";
+const props = defineProps(["activeTab"]);
+const { activeTab } = toRefs(props);
+// const activeTab = ref("home");
 
 const isActive = computed(() => {
   return activeTab.value === "home";

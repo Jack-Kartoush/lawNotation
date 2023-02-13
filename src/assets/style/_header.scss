@@ -2,9 +2,6 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    // background: rgb(122,95,61);
-    // background: linear-gradient(204deg, rgba(122,95,61,1) 0%, rgba(131,92,53,1) 15%, rgba(140,99,51,1) 31%, rgba(131,88,37,1) 70%, rgba(131,92,53,1) 86%, rgba(122,95,61,1) 100%);
-    // background-color: #a0793d;
     background-color: rgb(255, 255, 255);
     height: 70px;
     position: sticky;
@@ -16,7 +13,7 @@ header{
     display: flex;
     align-items: center;
 }
-header nav .navItems{
+header .navItems{
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -29,6 +26,7 @@ header li a {
     color: #a0793d;
     font-size: 15px;
     opacity: 0.5;
+    font-weight: 700;
 }
 .logo{
     width: 300px;

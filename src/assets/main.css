@@ -15,7 +15,7 @@ header {
   align-items: center;
 }
 
-header nav .navItems {
+header .navItems {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -29,6 +29,7 @@ header li a {
   color: #a0793d;
   font-size: 15px;
   opacity: 0.5;
+  font-weight: 700;
 }
 
 .logo {
@@ -231,13 +232,13 @@ header li a {
 }
 
 @media only screen and (min-width: 750px) {
-  .card:nth-child(3) {
+  .card:nth-child(2) {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 2%;
   }
-  .card:nth-child(3) .member-container {
+  .card:nth-child(2) .member-container {
     height: 100%;
     justify-content: flex-start;
   }
@@ -385,9 +386,10 @@ main {
     min-height: 100%;
   }
   .intro-text p {
-    width: 40%;
+    width: 30%;
+    text-align: start;
     font-size: 18px;
-    margin: 0;
+    margin: 0 4em 0px 0px;
     padding: 5px 20px;
   }
   .intro-text .text_bottom {

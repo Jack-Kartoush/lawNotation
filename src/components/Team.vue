@@ -1,6 +1,6 @@
 <template>
-  <section class="develpoer_team">
-    <a name="team"></a>
+  <section class="develpoer_team" id="team" ref="scrollRef">
+    <!-- <a ></a> -->
     <span class="team_title">
       <h1>Team</h1>
     </span>
@@ -10,7 +10,11 @@
           <img src="../assets/img/gijs.png" alt="" class="profile-photo" />
         </div>
         <div class="member-info">
-          <h4><a href="https://www.biss-institute.com/team/Gijs-van-Dijck/">Prof. Gijs van Dijck </a></h4>
+          <h4>
+            <a href="https://www.biss-institute.com/team/Gijs-van-Dijck/"
+              >Prof. Gijs van Dijck
+            </a>
+          </h4>
           <p>Law, AI</p>
           <p>Maastricht Law and Tech Lab</p>
           <p>
@@ -60,8 +64,8 @@
             >
           </h4>
           <p>
-            front-end development, user experience (UX), information
-            architecture, human-centric design
+            front-end development, user experience (UX), information architecture,
+            human-centric design
           </p>
 
           <p>
@@ -102,3 +106,27 @@
     </div>
   </section>
 </template>
+
+<script setup>
+import { onScrollIntersect } from "../composables/onScrollIntersect";
+import { ref, onMounted, onUnmounted, defineEmits } from "vue";
+
+const observer = ref({});
+const scrollRef = ref({});
+
+const emit = defineEmits(["team"]);
+
+function onEnter(entry) {
+  console.log("Entering", entry);
+  emit("team");
+}
+// When the component is mounted, start observing
+onMounted(() => {
+  observer.value = onScrollIntersect(scrollRef.value, onEnter);
+});
+
+// When the component is removed, disconnect the observer (clean-up step)
+onUnmounted(() => {
+  observer.value.disconnect();
+});
+</script>

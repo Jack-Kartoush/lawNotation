@@ -1,6 +1,6 @@
 <template>
-  <section class="Data_section">
-    <a name="data&software"></a>
+  <section class="Data_section" id="data&software" ref="scrollRef">
+    <!-- <a name="data&software"></a> -->
     <span class="data-title">
       <h1>Data And Software</h1>
     </span>
@@ -33,7 +33,6 @@
           <h3>Annotation:</h3>
           <p class="Description">Not available yet</p>
         </div>
-       
       </div>
       <div class="processing_storage">
         <div class="processing-container">
@@ -53,6 +52,29 @@
         </div>
       </div>
     </div>
-
   </section>
 </template>
+
+<script setup>
+import { onScrollIntersect } from "../composables/onScrollIntersect";
+import { ref, onMounted, onUnmounted, defineEmits } from "vue";
+
+const observer = ref({});
+const scrollRef = ref({});
+
+const emit = defineEmits(["data"]);
+
+function onEnter(entry) {
+  console.log("Entering", entry)
+  emit('data');
+}
+// When the component is mounted, start observing
+onMounted(() => {
+  observer.value = onScrollIntersect(scrollRef.value, onEnter);
+});
+
+// When the component is removed, disconnect the observer (clean-up step)
+onUnmounted(() => {
+  observer.value.disconnect();
+});
+</script>

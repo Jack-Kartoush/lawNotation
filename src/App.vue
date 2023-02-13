@@ -1,52 +1,40 @@
 <template>
-  <a name="home"></a>
-    <Header />
+  <!-- <a id="home"></a> -->
+  <Header :active-tab="activeTab"/>
   <main>
-
-      <!-- <img src="./assets/img/bg-lawNotationHome.jpg" alt="" class="intro-img" /> -->
-      <div class="intro-img"></div>
-    <section class="Introduction-container">
-      <div class="intro-text">
-        <p class="text_bottom">
-          The LAWNOTATION project (2022 – 2024) aims to develop an
-          infrastructure that allows researchers to making legal data and
-          annotation schemes (current and future) accessible for annotation and
-          analysis purposes, to develop an annotation platform for analyzing the
-          linguistic and legal characteristics of legal documents, and to build
-          a user-friendly interface.
-        </p>
-      </div>
-      <div class="intro-text">
-        <p class="text_right">
-          A team of developers work closely with researchers on the improved
-          access to legal materials. The platform is open source and free of use
-          for researchers.
-        </p>
-      </div>
-      <div class="intro-text">
-        <p>
-          LAWNOTATION is an initiative of the Digital Legal Studies cluster in
-          the Sectorplan Social Sciences and Humanities (SSH) -
-          Rechtsgeleerdheid and other Dutch universities that are
-          collaboratively working on questions related to the digitalisation of
-          law. The research is made possible by the Platform Digitale
-          Infrastructuur SSH
-        </p>
-      </div>
-    </section>
-    <DataSoftware />
-    <Team />
+    <Intro @home="activeTab = 'home'"/>
+    <DataSoftware @data="activeTab = 'data'"/>
+    <Team @team="activeTab = 'team'" />
+    <!-- <h2 id="test" ref="scrollRef">Test</h2> -->
     <Contributors />
-      </main>
-      <footer>
-       <h2>Interested in joining the development or in using the platform?</h2>
-       <p>Send an email to: <span><a href = "mailto: law-techlab@maastrichtuniversity.nl">law-techlab@maastrichtuniversity.nl</a></span></p>
-       <a name="contactus"></a>
-      </footer>
+  </main>
+  <footer>
+  <Footer @contact="activeTab = 'contact'"/>
+  </footer>
 </template>
+
 <script setup>
 import Contributors from "./components/Contributors.vue";
 import Team from "./components/Team.vue";
 import DataSoftware from "./components/DataSoftware.vue";
 import Header from "./components/Header.vue";
+import Intro from "./components/Intro.vue";
+import Footer from "./components/Footer.vue";
+import { onScrollIntersect } from "./composables/onScrollIntersect";
+
+import { ref, onMounted, onUnmounted } from "vue";
+const activeTab = ref("home");
+
+
+// const observer = ref({});
+// const scrollRef = ref({});
+// // When the component is mounted, start observing
+// onMounted(() => {
+//   observer.value = onScrollIntersect(scrollRef.value);
+// });
+
+// // When the component is removed, disconnect the observer (clean-up step)
+// onUnmounted(() => {
+//   observer.value.disconnect();
+// });
 </script>
