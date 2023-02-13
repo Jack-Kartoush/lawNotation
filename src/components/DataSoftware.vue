@@ -11,18 +11,18 @@
           <h5>Case Law:</h5>
 
           <ul>
-            <li><a href="">CJEU extractor</a></li>
+            <li><a href="https://pypi.org/project/cellar-extractor/">CJEU extractor</a></li>
 
             <p class="Description">
               Extracts case law of the Court of Justice of the European Union
               (CJEU). Data source: CELLAR / EUR-Lex
             </p>
 
-            <li><a href="">ECHR extracto</a></li>
+            <li><a href="https://pypi.org/project/echr-extractor/">ECHR extracto</a></li>
             <p class="Description">
               Extracts case law of the European Court of Human Rights (ECHR)
             </p>
-            <li><a href="">Rechtspraak extractor</a></li>
+            <li><a href="https://pypi.org/project/rechtspraak-extractor/">Rechtspraak extractor</a></li>
             <p class="Description">
               Extracts case law of the Netherlands (Rechtspraak)
             </p>
@@ -38,7 +38,7 @@
         <div class="processing-container">
           <h3>Pre-Processing</h3>
           <ul>
-            <li><a href="">Article splitter (EU)</a></li>
+            <li><a href="https://lawnotation-demo.vercel.app/">Article splitter (EU)</a></li>
             <p class="Description">
               Splits legislation of the European Commission into articles
             </p>
