@@ -26,7 +26,7 @@
 .data-title h1{
   
     padding-bottom: 5px;
-    border-bottom:1px solid #c3c3c3 ;
+    border-bottom:2px solid #ECE6D9 ;
 }
 .Datasets_contaier h3,
 .processing-container h3 {
@@ -69,31 +69,40 @@
     .Data_section{
         background-color: #a0793d;
         clip-path: polygon(100% 100%, 50% 88%, 0 100%, 0 19%, 50% 0, 100% 17%);
+       
     }
     .Data_container {
         display: flex;
-        justify-content: space-between;
-
+        justify-content: space-evenly;
+        margin: 3% 8%;
     }
 
     .Description {
         width: 100%;
         font-size: 16px;
+        margin-left: 11%;
     }
-
     .datasets_annotation,
     .processing_storage {
         padding: 5%; 
     }
     .datasets_annotation {
-        width: 50%;
+        width: 100%;
         border-right: 1px solid #c3c3c3;
     }
     .processing_storage {
-        width: 50%;
+        width: 100%;
+    }
+    .Datasets_contaier h5{
+        margin-left: 5%;
     }
     .Datasets_contaier li a,
     .processing-container li a {
         font-size: 20px;
+      
+    }
+    .Datasets_contaier li,
+    .processing-container li {
+        margin-left: 10%;
     }
 }

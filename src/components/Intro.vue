@@ -1,6 +1,6 @@
 <template>
-  <div class="intro-img"></div>
-  <section class="Introduction-container" id="home" ref="scrollRef">
+  <div class="intro-img" id="home" ></div>
+  <section class="Introduction-container" ref="scrollRef">
     <div class="intro-text">
       <p class="text_bottom">
         The LAWNOTATION project (2022 – 2024) aims to develop an infrastructure that

@@ -7,10 +7,9 @@
     margin-top: 4em;
 }
 .team_title h1 {
-    
     width: 100px;
     padding: 10px;
-    border-bottom: 1px solid #835825;
+    border-bottom: 2px solid #835825;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -24,7 +23,6 @@
     width: 350px;
     height: 100%;
     margin: 20px;
-    
 }
 .profile-photo {
     width: 70px;
@@ -37,12 +35,13 @@
 }
 .member-container {
     max-width: 350px;
-    max-height: 100%;
-    height: 10em;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #a0793d;
+    background: linear-gradient(319deg, rgba(160, 121, 61, 1) 0%, rgba(198, 152, 83, 1) 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#A0793D",endColorstr="#C69853",GradientType=1);
+    // background-color: #a0793d;
     color: #fff;
     border-radius: 10px;
 }
@@ -77,5 +76,4 @@
         height: 100%;
         justify-content: flex-start;
     }
-
 }

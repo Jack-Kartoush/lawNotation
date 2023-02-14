@@ -2,7 +2,7 @@
   <section class="Data_section" id="data&software" ref="scrollRef">
     <!-- <a name="data&software"></a> -->
     <span class="data-title">
-      <h1>Data And Software</h1>
+      <h1>Data & Software</h1>
     </span>
     <div class="Data_container">
       <div class="datasets_annotation">
@@ -36,7 +36,7 @@
       </div>
       <div class="processing_storage">
         <div class="processing-container">
-          <h3>Pre-Processing</h3>
+          <h3>Pre-Processing:</h3>
           <ul>
             <li><a href="https://lawnotation-demo.vercel.app/">Article splitter (EU)</a></li>
             <p class="Description">

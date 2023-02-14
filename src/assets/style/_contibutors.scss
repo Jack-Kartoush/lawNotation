@@ -14,7 +14,7 @@
     color: #ffff;
     padding: 10px;
     margin-top: 10px;
-    border-bottom: 1px solid #c3c3c3;
+    border-bottom:2px solid #ECE6D9 ;
     margin-bottom: 10px;
 }
 .Contributors_list{
@@ -39,11 +39,11 @@
     margin-left: 10px;
 
 }
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 890px) {
     .Contributors_list nav{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
-    
+        margin: 0 5rem;
     }
 }

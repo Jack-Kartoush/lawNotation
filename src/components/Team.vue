@@ -16,7 +16,13 @@
             </a>
           </h4>
           <p>Law, AI</p>
-          <p>Maastricht Law and Tech Lab</p>
+          <p>
+            <a
+              href="https://www.maastrichtuniversity.nl/about-um/faculties/law/research/law-and-tech-lab/law-and-tech-research"
+            >
+              Maastricht Law and Tech Lab</a
+            >
+          </p>
           <p>
             <a href="https://www.biss-institute.com/"
               >Brightlands Institute for Smart Society</a

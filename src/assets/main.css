@@ -10,11 +10,6 @@ header {
   z-index: 999;
 }
 
-.mainNav {
-  display: flex;
-  align-items: center;
-}
-
 header .navItems {
   display: flex;
   justify-content: space-between;
@@ -27,7 +22,7 @@ header .navItems {
 header li a {
   padding: 10px;
   color: #a0793d;
-  font-size: 15px;
+  font-size: 17px;
   opacity: 0.5;
   font-weight: 700;
 }
@@ -38,7 +33,7 @@ header li a {
 
 .active a {
   opacity: 1;
-  border-bottom: 1px solid #a0793d;
+  border-bottom: 2px solid #a0793d;
 }
 
 @media only screen and (max-width: 750px) {
@@ -47,6 +42,10 @@ header li a {
   }
   header li a {
     display: none;
+  }
+  header .navItems {
+    padding: 0;
+    margin: 0;
   }
 }
 .Data_section {
@@ -79,7 +78,7 @@ header li a {
 
 .data-title h1 {
   padding-bottom: 5px;
-  border-bottom: 1px solid #c3c3c3;
+  border-bottom: 2px solid #ECE6D9;
 }
 
 .Datasets_contaier h3,
@@ -134,26 +133,35 @@ header li a {
   }
   .Data_container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin: 3% 8%;
   }
   .Description {
     width: 100%;
     font-size: 16px;
+    margin-left: 11%;
   }
   .datasets_annotation,
   .processing_storage {
     padding: 5%;
   }
   .datasets_annotation {
-    width: 50%;
+    width: 100%;
     border-right: 1px solid #c3c3c3;
   }
   .processing_storage {
-    width: 50%;
+    width: 100%;
+  }
+  .Datasets_contaier h5 {
+    margin-left: 5%;
   }
   .Datasets_contaier li a,
   .processing-container li a {
     font-size: 20px;
+  }
+  .Datasets_contaier li,
+  .processing-container li {
+    margin-left: 10%;
   }
 }
 .team_title {
@@ -168,7 +176,7 @@ header li a {
 .team_title h1 {
   width: 100px;
   padding: 10px;
-  border-bottom: 1px solid #835825;
+  border-bottom: 2px solid #835825;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -197,12 +205,12 @@ header li a {
 
 .member-container {
   max-width: 350px;
-  max-height: 100%;
-  height: 10em;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: #a0793d;
+  background: linear-gradient(319deg, rgb(160, 121, 61) 0%, rgb(198, 152, 83) 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#A0793D",endColorstr="#C69853",GradientType=1);
   color: #fff;
   border-radius: 10px;
 }
@@ -260,7 +268,7 @@ header li a {
   color: white;
   padding: 10px;
   margin-top: 10px;
-  border-bottom: 1px solid #c3c3c3;
+  border-bottom: 2px solid #ECE6D9;
   margin-bottom: 10px;
 }
 
@@ -287,11 +295,12 @@ header li a {
   margin-left: 10px;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 890px) {
   .Contributors_list nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    margin: 0 5rem;
   }
 }
 * {
@@ -303,7 +312,7 @@ header li a {
 }
 
 body {
-  background-color: #e7e7e7;
+  background-color: #ECE6D9;
 }
 
 a {
@@ -333,7 +342,7 @@ a {
 }
 
 .intro-text:nth-child(2) {
-  margin: 10% 0;
+  margin: 2rem 0;
 }
 
 .intro-text p {
@@ -374,30 +383,31 @@ main {
 
 @media only screen and (min-width: 750px) {
   .Introduction-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content min-content;
     padding: 0;
-  }
-  .intro-text {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    align-self: center;
+    gap: 2em;
+    font-size: 18px;
+    margin: 3rem 5rem;
   }
   .intro-img {
     min-height: 100%;
   }
-  .intro-text p {
-    width: 30%;
-    text-align: start;
-    font-size: 18px;
-    margin: 0 4em 0px 0px;
-    padding: 5px 20px;
-  }
-  .intro-text .text_bottom {
-    margin-top: 3%;
+  .intro-text:nth-child(1) {
+    grid-column-start: 2;
   }
   .intro-text:nth-child(2) {
-    display: flex;
-    justify-content: center;
-    margin: 5% 0;
+    grid-column-start: 1;
+    margin: 0;
+  }
+  .intro-text:nth-child(3) {
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .Introduction-container {
+    margin: 4rem 12rem;
   }
 }/*# sourceMappingURL=main.css.map */
