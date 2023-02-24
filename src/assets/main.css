@@ -108,7 +108,7 @@ header li a {
   color: #e7e7e7;
   font-size: 16px;
   font-weight: 500;
-  margin-left: 10px;
+  margin-left: 12%;
   margin-bottom: 20px;
 }
 
@@ -125,6 +125,15 @@ header li a {
   padding-bottom: 10px;
 }
 
+.Datasets_contaier h5 {
+  margin-left: 5%;
+}
+
+.Datasets_contaier li,
+.processing-container li {
+  margin-left: 10%;
+}
+
 @media only screen and (min-width: 850px) {
   .Data_section {
     background-color: #a0793d;
@@ -138,7 +147,7 @@ header li a {
   }
   .Description {
     width: 100%;
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 11%;
   }
   .datasets_annotation,
@@ -152,16 +161,9 @@ header li a {
   .processing_storage {
     width: 100%;
   }
-  .Datasets_contaier h5 {
-    margin-left: 5%;
-  }
   .Datasets_contaier li a,
   .processing-container li a {
     font-size: 20px;
-  }
-  .Datasets_contaier li,
-  .processing-container li {
-    margin-left: 10%;
   }
 }
 .team_title {
@@ -331,7 +333,7 @@ a {
   background-image: url("./img/bg-lawNotationHome.jpg");
   max-width: 100%;
   width: 100%;
-  min-height: 85vh;
+  min-height: 100vh;
   filter: brightness(40%);
   z-index: -1;
   background-position: center;

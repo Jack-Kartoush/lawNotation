@@ -121,14 +121,8 @@
               >Sander Essel</a
             >
           </h4>
-          <p>data engineering, NLP, machine learning, AI</p>
-          <p>
-            <a
-              href="https://www.maastrichtuniversity.nl/about-um/faculties/law/research/law-and-tech-lab/law-and-tech-research"
-            >
-              Maastricht Law and Tech Lab</a
-            >
-          </p>
+          <p>Frontend development, backend development, data engineering</p> <br>
+         
           <p>
             <a href="https://www.biss-institute.com/"
               >Brightlands Institute for Smart Society</a

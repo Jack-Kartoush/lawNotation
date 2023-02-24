@@ -65,6 +65,7 @@
     text-align: start;
 }
 
+
 @media only screen and (min-width: 750px) {
     .card:nth-child(2) {
         width: 100%;
@@ -76,4 +77,5 @@
         height: 100%;
         justify-content: flex-start;
     }
+   
 }

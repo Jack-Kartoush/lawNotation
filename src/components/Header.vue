@@ -1,7 +1,7 @@
 <template>
   <header>
     <a href="#home" @click="activeTab = 'home'">
-      <img src="./icon/lawnotation logo.svg" alt="" class="logo"
+      <img src="../assets/icon/lawnotation_logo.svg" alt="" class="logo"
     /></a>
     <ul class="navItems">
       <li :class="{ active: isActive }">

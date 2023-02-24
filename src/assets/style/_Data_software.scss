@@ -52,7 +52,7 @@
     color: #e7e7e7;
     font-size: 16px;
     font-weight: 500;
-    margin-left: 10px;
+    margin-left: 12%;
     margin-bottom: 20px;
 }
 .Storage_container,
@@ -65,11 +65,17 @@
 .Storage_container h3 {
     padding-bottom: 10px;
 }
+.Datasets_contaier h5{
+    margin-left: 5%;
+}
+.Datasets_contaier li,
+    .processing-container li {
+        margin-left: 10%;
+    }
 @media only screen and (min-width: 850px) {
     .Data_section{
         background-color: #a0793d;
         clip-path: polygon(100% 100%, 50% 88%, 0 100%, 0 19%, 50% 0, 100% 17%);
-       
     }
     .Data_container {
         display: flex;
@@ -79,7 +85,7 @@
 
     .Description {
         width: 100%;
-        font-size: 16px;
+        font-size: 18px;
         margin-left: 11%;
     }
     .datasets_annotation,
@@ -93,16 +99,10 @@
     .processing_storage {
         width: 100%;
     }
-    .Datasets_contaier h5{
-        margin-left: 5%;
-    }
     .Datasets_contaier li a,
     .processing-container li a {
         font-size: 20px;
       
     }
-    .Datasets_contaier li,
-    .processing-container li {
-        margin-left: 10%;
-    }
+    
 }
