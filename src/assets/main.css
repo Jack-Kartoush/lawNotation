@@ -196,13 +196,18 @@ header li a {
 }
 
 .profile-photo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
   width: 80px;
   height: 80px;
-  border-radius: 100%;
+  border-radius: 60%;
   position: relative;
   bottom: 30%;
   right: 40%;
   box-shadow: 4px 4px 10px 1px rgba(38, 32, 32, 0.6);
+  border: 2px solid transparent;
 }
 
 .member-container {
@@ -251,6 +256,12 @@ header li a {
   .card:nth-child(2) .member-container {
     height: 100%;
     justify-content: flex-start;
+  }
+  .card:nth-child(2) .profile-photo {
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: center;
+       object-position: center;
   }
 }
 .contibutors_container {

@@ -7,7 +7,7 @@
     <div class="card">
       <div class="member-container">
         <div class="member-img">
-          <img src="../assets/img/gijs.png" alt="" class="profile-photo" />
+          <img src="../assets/img/gijs.jpg" alt="" class="profile-photo" />
         </div>
         <div class="member-info">
           <h4>
@@ -61,7 +61,7 @@
     <div class="card">
       <div class="member-container">
         <div class="member-img">
-          <img src="../assets/img/chris.png" alt="" class="profile-photo" />
+          <img src="../assets/img/chris.jpg" alt="" class="profile-photo" />
         </div>
         <div class="member-info">
           <h4>

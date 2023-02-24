@@ -25,14 +25,17 @@
     margin: 20px;
 }
 .profile-photo {
+    object-fit: cover;
+    object-position: top;
     width: 80px;
     height: 80px;
-    border-radius: 100%;
+    border-radius: 60%;
     position: relative;
     bottom: 30%;
     right: 40%;
-    box-shadow: 4px 4px 10px 1px rgba(38, 32, 32, 0.6);
- 
+    box-shadow: 4px 4px 10px 1px #26202099;
+    border: 2px solid transparent;
+   
 }
 .member-container {
     max-width: 350px;
@@ -78,5 +81,8 @@
         height: 100%;
         justify-content: flex-start;
     }
-   
+    .card:nth-child(2) .profile-photo{
+        object-fit: fill;
+        object-position: center;
+    }
 }
