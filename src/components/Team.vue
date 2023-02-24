@@ -117,8 +117,8 @@
         </div>
         <div class="member-info">
           <h4>
-            <a href="#"
-              >Sander Essel</a
+            <a href="https://www.biss-institute.com/team/sander-van-essel/"
+              >Sander van Essel</a
             >
           </h4>
           <p>Frontend development, backend development, data engineering</p> <br>
