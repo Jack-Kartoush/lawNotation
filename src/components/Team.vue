@@ -110,6 +110,33 @@
         </div>
       </div>
     </div>
+    <div class="card">
+      <div class="member-container">
+        <div class="member-img">
+          <img src="../assets/img/sander.jpg" alt="" class="profile-photo" />
+        </div>
+        <div class="member-info">
+          <h4>
+            <a href="#"
+              >Sander Essel</a
+            >
+          </h4>
+          <p>data engineering, NLP, machine learning, AI</p>
+          <p>
+            <a
+              href="https://www.maastrichtuniversity.nl/about-um/faculties/law/research/law-and-tech-lab/law-and-tech-research"
+            >
+              Maastricht Law and Tech Lab</a
+            >
+          </p>
+          <p>
+            <a href="https://www.biss-institute.com/"
+              >Brightlands Institute for Smart Society</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 

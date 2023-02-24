@@ -1,7 +1,7 @@
 <template>
   <section class="contibutors_container">
     <div class="Contributors_title">
-      <h1>Contributors</h1>
+      <h1>Consortium partners</h1>
     </div>
     <div class="Contributors_list">
       <nav>

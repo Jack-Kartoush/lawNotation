@@ -194,8 +194,8 @@ header li a {
 }
 
 .profile-photo {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   border-radius: 100%;
   position: relative;
   bottom: 30%;
