@@ -27,7 +27,7 @@ a {
     background-image: url("./img/bg-lawNotationHome.jpg");
     max-width: 100%;
     width: 100%;
-    min-height: 85vh;
+    min-height: 50em;
     filter: brightness(40%);
     z-index: -1;
     background-position: center;
@@ -78,9 +78,6 @@ main {
         font-size: 18px;
         margin: 3rem 5rem;
     }
-    .intro-img {
-        min-height: 100%;
-    }
 
     .intro-text:nth-child(1) {
         grid-column-start: 2;
@@ -94,6 +91,7 @@ main {
         grid-row-start: 3;
     }
 }
+
 @media only screen and (min-width: 1350px) {
     .Introduction-container {
         margin: 4rem 12rem;
