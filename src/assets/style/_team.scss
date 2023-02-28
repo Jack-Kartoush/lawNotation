@@ -34,7 +34,7 @@
     bottom: 30%;
     right: 40%;
     box-shadow: 4px 4px 10px 1px #26202099;
-    border: 2px solid transparent;
+    
    
 }
 .member-container {
@@ -82,7 +82,7 @@
         justify-content: flex-start;
     }
     .card:nth-child(2) .profile-photo{
-        object-fit: fill;
+        object-fit: cover;
         object-position: center;
     }
 }

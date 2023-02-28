@@ -27,7 +27,7 @@ a {
     background-image: url("./img/bg-lawNotationHome.jpg");
     max-width: 100%;
     width: 100%;
-    min-height: 100vh;
+    min-height: 85vh;
     filter: brightness(40%);
     z-index: -1;
     background-position: center;
@@ -68,7 +68,7 @@ main {
     display: flex;
     flex-direction: column;
 }
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 855px) {
     .Introduction-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
