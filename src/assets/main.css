@@ -497,6 +497,32 @@ main {
   color: #0D5984;
 }
 
+.readData-btn {
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid #0D5984;
+  width: 10%;
+  border-radius: 50px;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.readData-enter-active,
+.readData-leave-active {
+  transition: all 1s ease-in-out;
+  opacity: 1;
+}
+
+.readData-enter-from,
+.readData-leave-to {
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}
+
 @media only screen and (min-width: 855px) {
   .catch-title h1 {
     margin-top: 3rem;

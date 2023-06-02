@@ -1,5 +1,5 @@
 <template>
-  <section id="data&software" class="Introduction-container" ref="scrollRef">
+  <section id="data&software" ref="scrollRef" class="Introduction-container">
     <div class="book-mark"></div>
     <div class="intro-text">
       <h1>What is it?!</h1>
@@ -26,7 +26,13 @@
         the Platform Digitale Infrastructuur SSH
       </p>
     </div>
-    <DataSoftware />
+    <Transition name="readData">
+      <DataSoftware v-if="read" />
+    </Transition>
+    <button class="readData-btn" v-if="read == false" @click="read = true">
+      Read more
+    </button>
+    <button class="readData-btn" v-else @click="read = false">Read less</button>
   </section>
 </template>
 
@@ -37,8 +43,8 @@ import { ref, onMounted, onUnmounted, defineEmits } from "vue";
 
 const observer = ref({});
 const scrollRef = ref({});
-
 const emit = defineEmits(["data"]);
+const read = ref(false);
 
 function onEnter(entry) {
   console.log("Entering", entry);

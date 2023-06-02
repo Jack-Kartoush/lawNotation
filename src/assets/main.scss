@@ -94,26 +94,25 @@ main {
     display: block;
     background-image: url(../assets/img/plus.svg);
 }
-.catch-title{
-
+.catch-title {
     display: flex;
     flex-direction: column;
-   align-items: center;
+    align-items: center;
 }
-.catch-title h1{
+.catch-title h1 {
     width: 80%;
     font-size: 2rem;
     margin-top: 2rem;
     line-height: 3.5rem;
 }
-.catch-title h1 span{
+.catch-title h1 span {
     position: relative;
     color: $text-green;
     z-index: 1;
     padding: 5px;
     text-align: center;
 }
-.catch-title h1 span::after{
+.catch-title h1 span::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -122,32 +121,31 @@ main {
     left: 0;
     z-index: -1;
     transform: skew(-5deg, -5deg);
-   
 }
-.catch-title h1 span:nth-child(2){
+.catch-title h1 span:nth-child(2) {
     color: $text-blue;
 }
-.catch-title h1 span:nth-child(2)::after{
+.catch-title h1 span:nth-child(2)::after {
     background-color: $blue-mark;
 }
-.catch-title h1 span:nth-child(3){
+.catch-title h1 span:nth-child(3) {
     color: $text-red;
 }
-.catch-title h1 span:nth-child(3)::after{
+.catch-title h1 span:nth-child(3)::after {
     background-color: $red-mark;
 }
-.btn-container{
+.btn-container {
     display: flex;
     padding: 10px;
 }
-.btn-container button{
+.btn-container button {
     padding: 10px;
     margin-right: 10px;
     cursor: pointer;
     font-size: 15px;
 }
 .btn-container .start-btn,
-.btn-container .read-btn{
+.btn-container .read-btn {
     background-color: $text-blue;
     border: none;
     outline: none;
@@ -156,23 +154,46 @@ main {
     width: 100%;
     border-radius: 50px;
 }
-.btn-container .read-btn{
+.btn-container .read-btn {
     background-color: transparent;
     border: 2px solid $text-blue;
     color: $text-blue;
 }
+.readData-btn {
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid $text-blue;
+    width: 10%;
+    border-radius: 50px;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.readData-enter-active,
+.readData-leave-active {
+    transition: all 1s ease-in-out;
+    opacity: 1;
+}
 
+.readData-enter-from,
+.readData-leave-to {
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
 @media only screen and (min-width: 855px) {
-    .catch-title h1{
+    .catch-title h1 {
         margin-top: 3rem;
         font-size: 8rem;
         line-height: 10rem;
     }
-    .btn-container{
-      margin: 3% 0 0% 10% ;    
+    .btn-container {
+        margin: 3% 0 0% 10%;
     }
     .btn-container .start-btn,
-    .btn-container .read-btn{
+    .btn-container .read-btn {
         width: 15rem;
     }
     .Introduction-container {
@@ -183,7 +204,7 @@ main {
         padding: 0;
         font-size: 18px;
         margin: 1rem 15%;
-        box-shadow: 0 0px 2px 1px rgba(0,0,0,0.1);
+        box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 0.1);
     }
     .intro-text {
         margin: 1rem 0;
@@ -198,7 +219,7 @@ main {
         width: 25%;
         left: 38%;
     }
-    .intro-text .border{
+    .intro-text .border {
         border: 10px solid #0000;
     }
 }
