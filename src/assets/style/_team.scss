@@ -3,13 +3,13 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: #835825;
+    color: #000;
     margin-top: 4em;
 }
 .team_title h1 {
     width: 100px;
     padding: 10px;
-    border-bottom: 2px solid #835825;
+    border-bottom: 2px solid #000;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -34,8 +34,6 @@
     bottom: 30%;
     right: 40%;
     box-shadow: 4px 4px 10px 1px #26202099;
-    
-   
 }
 .member-container {
     max-width: 350px;
@@ -43,10 +41,8 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background: linear-gradient(319deg, rgba(160, 121, 61, 1) 0%, rgba(198, 152, 83, 1) 80%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#A0793D",endColorstr="#C69853",GradientType=1);
-    // background-color: #a0793d;
-    color: #fff;
+    background-color: $priemery-bg-color;
+    color: #000;
     border-radius: 10px;
 }
 .member-info p {
@@ -57,18 +53,17 @@
     text-transform: uppercase;
 }
 .member-info p a {
-    color: #fff;
+    color: #000;
     text-decoration: underline;
 }
 .member-info h4 a {
-    color: #fff;
     font-size: 18px;
     text-decoration: underline;
+    color: #000;
 }
 .member-info h4 {
     text-align: start;
 }
-
 
 @media only screen and (min-width: 750px) {
     .card:nth-child(2) {
@@ -81,7 +76,7 @@
         height: 100%;
         justify-content: flex-start;
     }
-    .card:nth-child(2) .profile-photo{
+    .card:nth-child(2) .profile-photo {
         object-fit: cover;
         object-position: center;
     }

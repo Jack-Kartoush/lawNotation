@@ -1,45 +1,48 @@
 <template>
-  <div class="intro-img" id="home" ></div>
-  <section class="Introduction-container" ref="scrollRef">
+  <section id="data&software" class="Introduction-container" ref="scrollRef">
+    <div class="book-mark"></div>
     <div class="intro-text">
-      <p class="text_bottom">
-        The LAWNOTATION project (2022 – 2024) aims to develop an infrastructure that
-        allows researchers to making legal data and annotation schemes (current and
-        future) accessible for annotation and analysis purposes, to develop an annotation
-        platform for analyzing the linguistic and legal characteristics of legal
-        documents, and to build a user-friendly interface.
+      <h1>What is it?!</h1>
+      <p class="border">
+        The LAWNOTATION project (2022 – 2024) aims to develop an infrastructure
+        that allows researchers to making legal data and annotation schemes
+        (current and future) accessible for annotation and analysis purposes, to
+        develop an annotation platform for analyzing the linguistic and legal
+        characteristics of legal documents, and to build a user-friendly
+        interface.
       </p>
-    </div>
-    <div class="intro-text">
-      <p class="text_right">
-        A team of developers work closely with researchers on the improved access to legal
-        materials. The platform is open source and free of use for researchers.
+
+      <p>
+        A team of developers work closely with researchers on the improved
+        access to legal materials. The platform is open source and free of use
+        for researchers.
       </p>
-    </div>
-    <div class="intro-text">
+
       <p>
         LAWNOTATION is an initiative of the Digital Legal Studies cluster in the
-        Sectorplan Social Sciences and Humanities (SSH) - Rechtsgeleerdheid and other
-        Dutch universities that are collaboratively working on questions related to the
-        digitalisation of law. The research is made possible by the Platform Digitale
-        Infrastructuur SSH
+        Sectorplan Social Sciences and Humanities (SSH) - Rechtsgeleerdheid and
+        other Dutch universities that are collaboratively working on questions
+        related to the digitalisation of law. The research is made possible by
+        the Platform Digitale Infrastructuur SSH
       </p>
     </div>
+    <DataSoftware />
   </section>
 </template>
 
 <script setup>
+import DataSoftware from "./DataSoftware.vue";
 import { onScrollIntersect } from "../composables/onScrollIntersect";
 import { ref, onMounted, onUnmounted, defineEmits } from "vue";
 
 const observer = ref({});
 const scrollRef = ref({});
 
-const emit = defineEmits(["home"]);
+const emit = defineEmits(["data"]);
 
 function onEnter(entry) {
   console.log("Entering", entry);
-  emit("home");
+  emit("data");
 }
 // When the component is mounted, start observing
 onMounted(() => {

@@ -2,6 +2,7 @@
 @import "./style/Data_software";
 @import "./style//team";
 @import "./style/contibutors";
+@import "./style/element";
 * {
     margin: 0;
     padding: 0;
@@ -10,45 +11,66 @@
     scroll-behavior: smooth;
 }
 body {
-    background-color: #ECE6D9;
+    background-color: #ffff;
 }
 a {
     text-decoration: none;
 }
 .Introduction-container {
+    position: relative;
+    background-color: $priemery-bg-color;
     display: block;
-    color: #fff;
+    color: #000;
     height: 100%;
     padding: 15px;
-    // margin: 2rem 4rem;
 }
-.intro-img {
-    position: absolute;
-    background-image: url("./img/bg-lawNotationHome.jpg");
-    max-width: 100%;
-    width: 100%;
-    min-height: 50em;
-    filter: brightness(40%);
-    z-index: -1;
-    background-position: center;
-}
+
 .intro-text {
     width: 100%;
+    margin-top: 2em;
 }
-.intro-text:nth-child(2) {
-    margin: 2rem 0;
-}
+
 .intro-text p {
-    margin-top: 10px;
+    margin-top: 2em;
+    line-height: 1.3rem;
+}
+.intro-text h1 {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+}
+.intro-text h1::after {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    content: "";
+    background-color: $blue-mark;
+    height: 100%;
+    width: 50%;
+    z-index: -1;
+    transform: skew(-5deg, -5deg);
+}
+
+.book-mark {
+    position: absolute;
+    background-color: $red-mark;
+    width: 3rem;
+    height: 7rem;
+    top: 0;
+    z-index: 1;
+    right: 30px;
+    clip-path: polygon(100% 100%, 50% 70%, 0 100%, 0% 0%, 100% 0, 100% 60%);
 }
 footer {
     max-width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #a0793d;
+    background-color: $priemery-bg-color;
+    background-image: url(./img/plus.svg);
     padding-left: 4%;
-    color: #ffff;
+    color: #000;
 }
 footer h2 {
     font-size: 20px;
@@ -60,7 +82,7 @@ footer p {
     margin-bottom: 3em;
 }
 footer p a {
-    color: #f5eede;
+    color: $text-blue;
     text-decoration: underline;
     font-size: 20px;
 }
@@ -68,32 +90,115 @@ main {
     display: flex;
     flex-direction: column;
 }
-@media only screen and (min-width: 855px) {
-    .Introduction-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: min-content min-content min-content;
-        padding: 0;
-        gap: 2em;
-        font-size: 18px;
-        margin: 3rem 5rem;
-    }
+.Intro-Title-section {
+    display: block;
+    background-image: url(../assets/img/plus.svg);
+}
+.catch-title{
 
-    .intro-text:nth-child(1) {
-        grid-column-start: 2;
-    }
-    .intro-text:nth-child(2) {
-        grid-column-start: 1;
-        margin: 0;
-    }
-    .intro-text:nth-child(3) {
-        grid-column-start: 2;
-        grid-row-start: 3;
-    }
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.catch-title h1{
+    width: 80%;
+    font-size: 2rem;
+    margin-top: 2rem;
+    line-height: 3.5rem;
+}
+.catch-title h1 span{
+    position: relative;
+    color: $text-green;
+    z-index: 1;
+    padding: 5px;
+    text-align: center;
+}
+.catch-title h1 span::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $green-mark;
+    left: 0;
+    z-index: -1;
+    transform: skew(-5deg, -5deg);
+   
+}
+.catch-title h1 span:nth-child(2){
+    color: $text-blue;
+}
+.catch-title h1 span:nth-child(2)::after{
+    background-color: $blue-mark;
+}
+.catch-title h1 span:nth-child(3){
+    color: $text-red;
+}
+.catch-title h1 span:nth-child(3)::after{
+    background-color: $red-mark;
+}
+.btn-container{
+    display: flex;
+    padding: 10px;
+}
+.btn-container button{
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.btn-container .start-btn,
+.btn-container .read-btn{
+    background-color: $text-blue;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 50px;
+}
+.btn-container .read-btn{
+    background-color: transparent;
+    border: 2px solid $text-blue;
+    color: $text-blue;
 }
 
-@media only screen and (min-width: 1350px) {
+@media only screen and (min-width: 855px) {
+    .catch-title h1{
+        margin-top: 3rem;
+        font-size: 8rem;
+        line-height: 10rem;
+    }
+    .btn-container{
+      margin: 3% 0 0% 10% ;    
+    }
+    .btn-container .start-btn,
+    .btn-container .read-btn{
+        width: 15rem;
+    }
     .Introduction-container {
-        margin: 4rem 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $priemery-bg-color;
+        padding: 0;
+        font-size: 18px;
+        margin: 1rem 15%;
+        box-shadow: 0 0px 2px 1px rgba(0,0,0,0.1);
+    }
+    .intro-text {
+        margin: 1rem 0;
+        width: 60%;
+    }
+    .intro-text p {
+        padding: 1rem;
+        margin-top: 1rem;
+        line-height: 1.8rem;
+    }
+    .intro-text h1::after {
+        width: 25%;
+        left: 38%;
+    }
+    .intro-text .border{
+        border: 10px solid #0000;
     }
 }

@@ -48,37 +48,42 @@ header li a {
     margin: 0;
   }
 }
-.Data_section {
-  background-color: #a0793d;
-}
-
 .Data_container {
   height: 100%;
-  color: #fff;
-  padding: 20px;
+  color: #000;
 }
 
-.processing_storage {
-  display: block;
-  padding: 10px;
-}
-
+.processing_storage,
 .datasets_annotation {
-  padding: 10px;
   display: block;
+  padding: 10px;
 }
 
 .data-title {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 5em;
-  color: #fff;
+  padding-top: 3em;
 }
 
 .data-title h1 {
-  padding-bottom: 5px;
-  border-bottom: 2px solid #ECE6D9;
+  width: 60%;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  z-index: 1;
+  border-bottom: 2px solid #ece6d9;
+}
+
+.data-title h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 24%;
+  background-color: #B6CDDA;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+  transform: skew(-5deg, -5deg);
 }
 
 .Datasets_contaier h3,
@@ -90,7 +95,7 @@ header li a {
 .processing-container li a {
   font-weight: 500;
   font-size: 18px;
-  color: #fff;
+  color: #000;
   text-decoration: underline;
 }
 
@@ -105,24 +110,15 @@ header li a {
 }
 
 .Description {
-  color: #e7e7e7;
+  color: #000;
   font-size: 16px;
   font-weight: 500;
   margin-left: 12%;
   margin-bottom: 20px;
 }
 
-.Storage_container,
-.Anotation_container {
+.annotation_storge {
   cursor: progress;
-}
-
-.Anotation_container h3 {
-  padding-bottom: 10px;
-}
-
-.Storage_container h3 {
-  padding-bottom: 10px;
 }
 
 .Datasets_contaier h5 {
@@ -135,20 +131,16 @@ header li a {
 }
 
 @media only screen and (min-width: 855px) {
-  .Data_section {
-    background-color: #a0793d;
-    -webkit-clip-path: polygon(100% 100%, 50% 88%, 0 100%, 0 19%, 50% 0, 100% 17%);
-            clip-path: polygon(100% 100%, 50% 88%, 0 100%, 0 19%, 50% 0, 100% 17%);
-  }
   .Data_container {
-    display: flex;
+    display: block;
     justify-content: space-evenly;
     margin: 3% 8%;
   }
   .Description {
     width: 100%;
-    font-size: 18px;
-    margin-left: 11%;
+    font-size: 16px;
+    padding-top: 10px;
+    margin-left: 4%;
   }
   .datasets_annotation,
   .processing_storage {
@@ -156,14 +148,24 @@ header li a {
   }
   .datasets_annotation {
     width: 100%;
-    border-right: 1px solid #c3c3c3;
   }
   .processing_storage {
     width: 100%;
   }
+  .Datasets_contaier ul,
+  .processing-container ul {
+    display: flex;
+  }
+  .Datasets_contaier li p {
+    border-right: 1px solid #cecece;
+  }
   .Datasets_contaier li a,
   .processing-container li a {
     font-size: 20px;
+  }
+  .data-title h1::after {
+    left: 35%;
+    width: 30%;
   }
 }
 .team_title {
@@ -171,14 +173,14 @@ header li a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  color: #835825;
+  color: #000;
   margin-top: 4em;
 }
 
 .team_title h1 {
   width: 100px;
   padding: 10px;
-  border-bottom: 2px solid #835825;
+  border-bottom: 2px solid #000;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -215,9 +217,8 @@ header li a {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background: linear-gradient(319deg, rgb(160, 121, 61) 0%, rgb(198, 152, 83) 80%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#A0793D",endColorstr="#C69853",GradientType=1);
-  color: #fff;
+  background-color: #EDE6DA;
+  color: #000;
   border-radius: 10px;
 }
 
@@ -231,14 +232,14 @@ header li a {
 }
 
 .member-info p a {
-  color: #fff;
+  color: #000;
   text-decoration: underline;
 }
 
 .member-info h4 a {
-  color: #fff;
   font-size: 18px;
   text-decoration: underline;
+  color: #000;
 }
 
 .member-info h4 {
@@ -265,7 +266,7 @@ header li a {
 }
 .contibutors_container {
   margin-top: 5%;
-  background-color: #A0793D;
+  background-color: #EDE6DA;
   height: 100%;
 }
 
@@ -277,10 +278,10 @@ header li a {
 }
 
 .Contributors_title h1 {
-  color: white;
+  color: #000;
   padding: 10px;
   margin-top: 10px;
-  border-bottom: 2px solid #ECE6D9;
+  border-bottom: 2px solid #000;
   margin-bottom: 10px;
 }
 
@@ -293,17 +294,17 @@ header li a {
 }
 
 .Contributors_list nav ul li {
-  color: white;
+  color: #000;
   margin-bottom: 20px;
 }
 
 .Contributors_list li a {
-  color: #fff;
+  color: #000;
   text-decoration: underline;
 }
 
 .Contributors_list span {
-  color: white;
+  color: #000;
   margin-left: 10px;
 }
 
@@ -324,7 +325,7 @@ header li a {
 }
 
 body {
-  background-color: #ECE6D9;
+  background-color: white;
 }
 
 a {
@@ -332,33 +333,53 @@ a {
 }
 
 .Introduction-container {
+  position: relative;
+  background-color: #EDE6DA;
   display: block;
-  color: #fff;
+  color: #000;
   height: 100%;
   padding: 15px;
 }
 
-.intro-img {
-  position: absolute;
-  background-image: url("./img/bg-lawNotationHome.jpg");
-  max-width: 100%;
-  width: 100%;
-  min-height: 50em;
-  filter: brightness(40%);
-  z-index: -1;
-  background-position: center;
-}
-
 .intro-text {
   width: 100%;
-}
-
-.intro-text:nth-child(2) {
-  margin: 2rem 0;
+  margin-top: 2em;
 }
 
 .intro-text p {
-  margin-top: 10px;
+  margin-top: 2em;
+  line-height: 1.3rem;
+}
+
+.intro-text h1 {
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  z-index: 1;
+}
+
+.intro-text h1::after {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  content: "";
+  background-color: #B6CDDA;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+  transform: skew(-5deg, -5deg);
+}
+
+.book-mark {
+  position: absolute;
+  background-color: #DAB6BD;
+  width: 3rem;
+  height: 7rem;
+  top: 0;
+  z-index: 1;
+  right: 30px;
+  -webkit-clip-path: polygon(100% 100%, 50% 70%, 0 100%, 0% 0%, 100% 0, 100% 60%);
+          clip-path: polygon(100% 100%, 50% 70%, 0 100%, 0% 0%, 100% 0, 100% 60%);
 }
 
 footer {
@@ -366,9 +387,10 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #a0793d;
+  background-color: #EDE6DA;
+  background-image: url(./img/plus.svg);
   padding-left: 4%;
-  color: white;
+  color: #000;
 }
 
 footer h2 {
@@ -383,7 +405,7 @@ footer p {
 }
 
 footer p a {
-  color: #f5eede;
+  color: #0D5984;
   text-decoration: underline;
   font-size: 20px;
 }
@@ -393,30 +415,125 @@ main {
   flex-direction: column;
 }
 
-@media only screen and (min-width: 855px) {
-  .Introduction-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content min-content min-content;
-    padding: 0;
-    gap: 2em;
-    font-size: 18px;
-    margin: 3rem 5rem;
-  }
-  .intro-text:nth-child(1) {
-    grid-column-start: 2;
-  }
-  .intro-text:nth-child(2) {
-    grid-column-start: 1;
-    margin: 0;
-  }
-  .intro-text:nth-child(3) {
-    grid-column-start: 2;
-    grid-row-start: 3;
-  }
+.Intro-Title-section {
+  display: block;
+  background-image: url(../assets/img/plus.svg);
 }
-@media only screen and (min-width: 1350px) {
+
+.catch-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catch-title h1 {
+  width: 80%;
+  font-size: 2rem;
+  margin-top: 2rem;
+  line-height: 3.5rem;
+}
+
+.catch-title h1 span {
+  position: relative;
+  color: #0D8435;
+  z-index: 1;
+  padding: 5px;
+  text-align: center;
+}
+
+.catch-title h1 span::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #B6DAC2;
+  left: 0;
+  z-index: -1;
+  transform: skew(-5deg, -5deg);
+}
+
+.catch-title h1 span:nth-child(2) {
+  color: #0D5984;
+}
+
+.catch-title h1 span:nth-child(2)::after {
+  background-color: #B6CDDA;
+}
+
+.catch-title h1 span:nth-child(3) {
+  color: #840D22;
+}
+
+.catch-title h1 span:nth-child(3)::after {
+  background-color: #DAB6BD;
+}
+
+.btn-container {
+  display: flex;
+  padding: 10px;
+}
+
+.btn-container button {
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn-container .start-btn,
+.btn-container .read-btn {
+  background-color: #0D5984;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 50px;
+}
+
+.btn-container .read-btn {
+  background-color: transparent;
+  border: 2px solid #0D5984;
+  color: #0D5984;
+}
+
+@media only screen and (min-width: 855px) {
+  .catch-title h1 {
+    margin-top: 3rem;
+    font-size: 8rem;
+    line-height: 10rem;
+  }
+  .btn-container {
+    margin: 3% 0 0% 10%;
+  }
+  .btn-container .start-btn,
+  .btn-container .read-btn {
+    width: 15rem;
+  }
   .Introduction-container {
-    margin: 4rem 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EDE6DA;
+    padding: 0;
+    font-size: 18px;
+    margin: 1rem 15%;
+    box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 0.1);
+  }
+  .intro-text {
+    margin: 1rem 0;
+    width: 60%;
+  }
+  .intro-text p {
+    padding: 1rem;
+    margin-top: 1rem;
+    line-height: 1.8rem;
+  }
+  .intro-text h1::after {
+    width: 25%;
+    left: 38%;
+  }
+  .intro-text .border {
+    border: 10px solid rgba(0, 0, 0, 0);
   }
 }/*# sourceMappingURL=main.css.map */
