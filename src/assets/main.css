@@ -324,7 +324,8 @@ header li a {
 
 .Contributors_list nav ul li {
   color: #000;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
+  line-height: 2rem;
 }
 
 .Contributors_list li a {
@@ -340,7 +341,7 @@ header li a {
 @media only screen and (min-width: 890px) {
   .Contributors_list nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin: 0 5rem;
   }
@@ -348,7 +349,7 @@ header li a {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
@@ -459,6 +460,7 @@ main {
   width: 80%;
   font-size: 2rem;
   margin-top: 2rem;
+  padding: 1.2rem;
   line-height: 3.5rem;
 }
 
@@ -502,8 +504,9 @@ main {
   padding: 10px;
 }
 
-.btn-container button {
+.btn-container a {
   padding: 10px;
+  text-align: center;
   margin-right: 10px;
   cursor: pointer;
   font-size: 15px;
@@ -530,7 +533,7 @@ main {
   .catch-title h1 {
     margin-top: 3rem;
     font-size: 8rem;
-    line-height: 10rem;
+    line-height: 11rem;
   }
   .btn-container {
     margin: 3% 0 0% 10%;

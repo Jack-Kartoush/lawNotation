@@ -7,8 +7,8 @@
       </h1>
     </div>
     <div class="btn-container">
-      <button class="start-btn">Start now</button>
-      <button class="read-btn">Read more</button>
+      <a href="#" class="start-btn">Start now</a>
+      <a  href="#data&software" class="read-btn">Read more</a>
     </div>
   </section>
 </template>

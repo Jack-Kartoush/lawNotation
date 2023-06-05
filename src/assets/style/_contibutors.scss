@@ -28,7 +28,8 @@
 }
 .Contributors_list nav ul li{
     color: #000;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
+    line-height: 2rem;
 }
 .Contributors_list li a{
     
@@ -43,7 +44,7 @@
 @media only screen and (min-width: 890px) {
     .Contributors_list nav{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         margin: 0 5rem;
     }
