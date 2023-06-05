@@ -155,34 +155,12 @@ main {
     border-radius: 50px;
 }
 .btn-container .read-btn {
-    background-color: transparent;
+    background-color: #fff;
     border: 2px solid $text-blue;
     color: $text-blue;
-}
-.readData-btn {
-    align-self: flex-start;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: transparent;
-    border: 2px solid $text-blue;
-    width: 10%;
-    border-radius: 50px;
-    margin-left: 20%;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-.readData-enter-active,
-.readData-leave-active {
-    transition: all 1s ease-in-out;
-    opacity: 1;
+   
 }
 
-.readData-enter-from,
-.readData-leave-to {
-    transition: all 1s ease-in-out;
-    opacity: 0;
-}
 @media only screen and (min-width: 855px) {
     .catch-title h1 {
         margin-top: 3rem;
@@ -203,7 +181,7 @@ main {
         background-color: $priemery-bg-color;
         padding: 0;
         font-size: 18px;
-        margin: 1rem 15%;
+        margin: 2rem 10%;
         box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 0.1);
     }
     .intro-text {
@@ -211,15 +189,13 @@ main {
         width: 60%;
     }
     .intro-text p {
-        padding: 1rem;
-        margin-top: 1rem;
+     
+        margin-top: 2rem;
         line-height: 1.8rem;
     }
     .intro-text h1::after {
         width: 25%;
         left: 38%;
     }
-    .intro-text .border {
-        border: 10px solid #0000;
-    }
+  
 }

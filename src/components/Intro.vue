@@ -3,7 +3,7 @@
     <div class="book-mark"></div>
     <div class="intro-text">
       <h1>What is it?!</h1>
-      <p class="border">
+      <p>
         The LAWNOTATION project (2022 – 2024) aims to develop an infrastructure
         that allows researchers to making legal data and annotation schemes
         (current and future) accessible for annotation and analysis purposes, to
@@ -29,10 +29,14 @@
     <Transition name="readData">
       <DataSoftware v-if="read" />
     </Transition>
-    <button class="readData-btn" v-if="read == false" @click="read = true">
-      Read more
-    </button>
-    <button class="readData-btn" v-else @click="read = false">Read less</button>
+    <div class="readDatabtn-group">
+      <button class="readData-btn" v-if="read == false" @click="read = true">
+        Read more
+      </button>
+      <button class="readData-btn" v-else @click="read = false">
+        Read less
+      </button>
+    </div>
   </section>
 </template>
 
