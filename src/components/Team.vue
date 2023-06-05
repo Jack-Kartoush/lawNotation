@@ -1,7 +1,7 @@
 <template>
-  <section class="develpoer_team" id="team" ref="scrollRef">
+  <section id="team" class="develpoer_team" ref="scrollRef">
     <!-- <a ></a> -->
-    <span class="team_title">
+    <span  class="team_title">
       <h1>Team</h1>
     </span>
     <div class="card">

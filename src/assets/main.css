@@ -351,6 +351,7 @@ header li a {
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  scroll-padding-top: 100px;
   scroll-behavior: smooth;
 }
 
