@@ -132,13 +132,17 @@ main {
 .catch-title h1 span:nth-child(2)::after {
     background-color: $blue-mark;
     transform: skew(4deg, 4deg);
+    text-align: center;
+    width: 90%;
 }
 .catch-title h1 span:nth-child(3) {
     color: $text-red;
 }
 .catch-title h1 span:nth-child(3)::after {
     background-color: $red-mark;
-    transform: skew(1deg, 3deg);
+    transform: skew(-1deg, -3deg);
+    width: 90%;
+    top: .5vh;
 }
 .btn-container {
     display: flex;

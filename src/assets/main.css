@@ -491,6 +491,8 @@ main {
 .catch-title h1 span:nth-child(2)::after {
   background-color: #B6CDDA;
   transform: skew(4deg, 4deg);
+  text-align: center;
+  width: 90%;
 }
 
 .catch-title h1 span:nth-child(3) {
@@ -499,7 +501,9 @@ main {
 
 .catch-title h1 span:nth-child(3)::after {
   background-color: #DAB6BD;
-  transform: skew(1deg, 3deg);
+  transform: skew(-1deg, -3deg);
+  width: 90%;
+  top: 0.5vh;
 }
 
 .btn-container {
