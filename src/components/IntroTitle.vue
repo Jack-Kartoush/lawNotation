@@ -7,7 +7,7 @@
       </h1>
     </div>
     <div class="btn-container">
-      <a href="#" class="start-btn">Start now</a>
+      <a href="https://lawnotation.vercel.app" class="start-btn" target="_blank">Start now</a>
       <a  href="#data&software" class="read-btn">Read more</a>
     </div>
   </section>
