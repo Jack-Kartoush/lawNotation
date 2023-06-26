@@ -8,7 +8,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "navscroll": "^1.1.3",
     "vue": "^3.2.45"
   },
   "devDependencies": {
